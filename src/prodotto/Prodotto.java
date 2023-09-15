@@ -38,10 +38,9 @@ public class Prodotto {
         boolean risult=false;
         double somma = 0;
         for(int i=0 ; i<barCode.length ; i++){
-            somma = barCode[i]*((3*(i%2))+((i+1)%2));
-            System.out.print(somma);
+            somma += barCode[i]*((3*(i%2))+((i+1)%2));
         }
         return false;
     }
-  
+    
 }
